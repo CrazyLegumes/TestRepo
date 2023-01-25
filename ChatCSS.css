@@ -1,0 +1,125 @@
+.chatItem {
+  animation: enter 0.33s normal forwards ease-in;
+}
+
+.badgeWithName {
+  background-color: rgba(95, 32, 62, 1 );
+  border-radius: 10px;
+  color: #b5a196;
+  font-size: 35px;
+  padding: 5px 15px 10px 5px;
+  width: fit-content;
+  vertical-align: middle;
+  letter-spacing: 5px;
+  font-family: "Tienne", serif;
+}
+
+.sparkle {
+  max-width: 45px;
+  object-fit: scale-down;
+  vertical-align: middle;
+}
+
+.nameLine {
+  height: fit-content;
+  vertical-align: middle;
+  margin-top: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.messageLine {
+	 background-color: rgba(232, 195, 162, 1);
+  margin-left: 45px;
+  margin-right: 30px;
+  padding-bottom:30px;
+  padding-top: 30px;
+}
+
+.message {
+  color: #b5a196;
+  font-size: 32px;
+  margin-left: 45px;
+  display: block;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+}
+
+.badge {
+  height: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  vertical-align: middle;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+#log {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#log .emote {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0.4em 0.2em;
+  position: relative;
+}
+
+#log .emote img {
+  display: inline-block;
+  height: 1em;
+  opacity: 0;
+}
+
+
+#chat {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+#chat::-webkit-scrollbar{
+  display: none;
+}
+
+#chat .emote {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0.4em 0.2em;
+  position: relative;
+}
+
+#chat .emote img {
+  display: inline-block;
+  height: 1em;
+  opacity: 0;
+}
+
+#chat ul {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+
+body {
+  overflow-x:hidden;
+  }
+
+@keyframes enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
